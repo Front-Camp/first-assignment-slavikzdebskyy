@@ -8,6 +8,13 @@
 */
 const max = arr => {
   /* your logic here...*/
+  let maxEl = arr[0];
+  arr.forEach(el=>{
+    if(!isNaN(el) && (el > maxEl)){
+      maxEl = el;
+    }
+  } );
+  return maxEl;
 };
 
 export default max;

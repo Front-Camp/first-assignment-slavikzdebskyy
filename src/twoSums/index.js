@@ -10,6 +10,19 @@
  */
 const twoSums = (arr, base) => {
   /* your logic here...*/
+  let sum;
+  let result = [];
+  for(let i = 0; i < arr.length; i++)
+  if(i!=arr.length-1){
+    sum = arr[i] + arr[i + 1];
+    if(sum == base){
+      result.push(arr[i]);
+      result.push(arr[i+1]);
+      return result;
+    }
+  } else {
+    return console.error('Elements not found')
+  }  
 };
 
 export default twoSums;

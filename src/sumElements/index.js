@@ -12,6 +12,13 @@
  */
 const sumElements = arr => {
   /* your logic here...*/
+  let sum = 0;
+  arr.forEach(el => {
+    if(parseInt(el)){
+      sum += parseInt(el);
+    }
+  });
+  return sum;
 };
 
 export default sumElements;
